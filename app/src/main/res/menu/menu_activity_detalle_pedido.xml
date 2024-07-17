@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_pedido_detalle_anular"
+        app:showAsAction="always"
+        android:icon="@drawable/icon_action_document_anular"
+        android:title="Anular pedido" />
+    <item
+        android:id="@+id/menu_pedido_detalle_modificar"
+        app:showAsAction="always"
+        android:icon="@drawable/icon_action_document_editar"
+        android:title="Modificar pedido" />
+    <item
+        android:id="@+id/menu_pedido_detalle_forma_pago"
+        app:showAsAction="always"
+        android:icon="@drawable/icon_action_forma_pago"
+        android:title="Modificar forma de pago" />
+    <item
+        android:id="@+id/menu_pedido_detalle_facturar"
+        app:showAsAction="always"
+        android:icon="@drawable/icon_action_document_facturar"
+        android:title="Facturar pedido" />
+<!--    <item-->
+<!--        android:id="@+id/menu_pedido_detalle_imprimir"-->
+<!--        app:showAsAction="always"-->
+<!--        android:icon="@drawable/icon_action_imprimir"-->
+<!--        android:title="Imprimir" />-->
+    <item
+        android:id="@+id/menu_pedido_detalle_pdf"
+        app:showAsAction="always"
+        android:icon="@drawable/icon__action_document_pdf"
+        android:title="Obtener PDF del documento" />
+</menu>

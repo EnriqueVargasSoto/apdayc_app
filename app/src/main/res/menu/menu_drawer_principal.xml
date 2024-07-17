@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/grupo1" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_clientes"
+            android:icon="@drawable/ic_menu_clientes"
+            android:title="Clientes" />
+        <item
+            android:id="@+id/nav_encuesta"
+            android:icon="@drawable/ic_menu_encuesta"
+            android:title="Encuesta" />
+        <item
+            android:id="@+id/nav_tracking"
+            android:icon="@drawable/ic_menu_tracking"
+            android:title="Tracking" />
+        <item
+            android:id="@+id/nav_producto"
+            android:icon="@drawable/ic_menu_productos"
+            android:title="Productos" />
+        <item
+            android:id="@+id/nav_pedidos"
+            android:icon="@drawable/ic_menu_pedidos"
+            android:title="Pedidos" />
+        <item
+            android:id="@+id/nav_estadisticas"
+            android:icon="@drawable/ic_menu_estadisticas"
+            android:title="Estadisticas" />
+        <item
+            android:id="@+id/nav_mapa"
+            android:icon="@drawable/ic_menu_mapa"
+            android:title="Mapa" />
+        <item
+            android:id="@+id/nav_preLiquidacion"
+            android:icon="@drawable/ic_menu_preliquidacion"
+            android:title="Pre Liquidación" />
+        <item
+            android:id="@+id/nav_devoluciones"
+            android:icon="@drawable/ic_menu_devoluciones"
+            android:title="Devoluciones" />
+        <item
+            android:id="@+id/nav_cierreVenta"
+            android:icon="@drawable/ic_menu_cierre_ventas"
+            android:title="Cierre de Venta" />
+
+    </group>
+
+    <group android:id="@+id/grupo2" android:checkableBehavior="single">
+        <!--item
+            android:id="@+id/nav_configuracion"
+            android:title="Configuración" /-->
+        <item
+            android:id="@+id/nav_salir"
+            android:title="Salir" />
+    </group>
+
+</menu>

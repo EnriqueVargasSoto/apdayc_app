@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/actionbar_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_activity_general" >
+
+            <Button
+                android:id="@+id/btn_generarBackup"
+                android:drawableTop="@drawable/icon_backup_48"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:theme="@style/RaisedButtonWhite"
+                android:contentDescription="Generar BackUp"
+                android:text="Generar BackUp" />
+
+
+            <Button
+                android:layout_marginTop="25dp"
+                android:id="@+id/btn_cargarBackup"
+                android:drawableTop="@drawable/icon_adjuntar_48"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/RaisedButtonWhite"
+                android:contentDescription="Cargar BackUp"
+                android:text="Cargar BackUp" />
+
+
+            <TextView
+                android:layout_marginTop="25dp"
+                android:id="@+id/tv_ruta"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/shape_text_view_box"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:text="ruta del archivo" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_horizontal_activity">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_descripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/editText_textSize_general"
+                    android:hint="@string/hint_indique_inconveniente"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:layout_marginTop="25dp"
+                android:padding="20dp"
+                android:id="@+id/btn_enviarBackup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:theme="@style/RaisedButtonAccent"
+                android:text="Enviar Backup"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

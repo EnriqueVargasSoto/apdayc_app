@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:background="?android:selectableItemBackground"
+    android:padding="@dimen/padding_cardview_interno">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:text="Descripción del Producto"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_idProducto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0000" />
+            <TextView
+                android:id="@+id/tv_factorConversion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_horizontal_activity"
+                android:text="factor conversión: 0" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_stockUnidadMayor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 PAQUETES" />
+
+        <TextView
+            android:id="@+id/tv_stockUnidadMenor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 UNIDADES" />
+    </LinearLayout>
+
+</LinearLayout>

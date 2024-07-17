@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<path xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-path name="Ventas360" path="Android/data/com.expediodigital.ventas360/files/Pictures"/>
+</path>

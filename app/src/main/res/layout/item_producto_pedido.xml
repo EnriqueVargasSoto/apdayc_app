@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:background="?android:selectableItemBackground"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:id="@+id/linear_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/blue_grey_500"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/img_producto"
+            android:layout_width="@dimen/image_size_listitem"
+            android:layout_height="@dimen/image_size_listitem"
+            app:srcCompat="@drawable/icon_paquete"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_cardview_interno">
+
+        <TextView
+            android:id="@+id/tv_codigoProducto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_between_textView"
+            android:text="0000"/>
+
+        <TextView
+            android:id="@+id/tv_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_codigoProducto"
+            android:layout_toLeftOf="@id/tv_malla"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:text="Descripción del Producto"/>
+
+        <TextView
+            android:id="@+id/tv_malla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text=""
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/lbl_cantidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_descripcion"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="@dimen/margin_between_textView"
+            android:text="Cantidad:"/>
+        <TextView
+            android:id="@+id/tv_cantidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_descripcion"
+            android:layout_toRightOf="@+id/lbl_cantidad"
+            android:textStyle="bold"
+            android:layout_marginRight="@dimen/margin_between_textView"
+            android:text="0"/>
+        <TextView
+            android:id="@+id/tv_sinstock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_descripcion"
+            android:layout_toRightOf="@+id/tv_cantidad"
+            android:textColor="@color/red_300"
+            android:textStyle="bold"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/lbl_precio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_descripcion"
+            android:layout_toLeftOf="@+id/tv_precio"
+            android:layout_marginRight="@dimen/margin_between_textView"
+            android:text="Precio:"/>
+        <TextView
+            android:id="@+id/tv_precio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_descripcion"
+            android:layout_alignParentRight="true"
+            android:text="S/. 0.00"/>
+
+
+        <TextView
+            android:id="@+id/lbl_unidadMedida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/lbl_cantidad"
+            android:layout_marginRight="@dimen/margin_between_textView"
+            android:text="Unidad:" />
+        <TextView
+            android:id="@+id/tv_unidadMedida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_cantidad"
+            android:layout_toRightOf="@+id/lbl_unidadMedida"
+            android:text="UN"/>
+
+        <TextView
+            android:id="@+id/lbl_subTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_precio"
+            android:layout_toLeftOf="@+id/tv_subTotal"
+            android:layout_marginRight="@dimen/margin_between_textView"
+            android:text="Sub total:"/>
+        <TextView
+            android:id="@+id/tv_subTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_precio"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:text="S/. 0.00"/>
+    </RelativeLayout>
+
+</LinearLayout>

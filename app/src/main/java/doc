@@ -1,0 +1,14 @@
+Tipos de Encuesta:
+G: General
+T: Trade (Se utiliza cuando hay personas con cargo M: Mercaderista. Quienes colocan productos de publicidad o exhibición y luego toman la evidencia fotográfica)
+PRE: Pre encuesta (Se utiliza para los vendedores, exigiendo que se haga una encuesta antes de tomar el pedido)
+POST: Post encuesta (Se utiliza para los vendedores, exigiendo que se haga una encuesta despues de tomar el pedido)
+
+*Siempre se debe verificar si existe una encuesta Pre antes de realizar un pedido y al finalizar, verificar si existe una encuesta Post
+Y solo debe haber una encuesta de cada tipo a la vez.
+*Las encuestas son creadas en la tabla Encuesta y EncuestaDetalle
+
+sp_obtenerHRMarcaxVendedor
+sp_obtenerHRVendedor
+sp_obtenerHRCliente
+sp_obtenerHRMarcaResumen

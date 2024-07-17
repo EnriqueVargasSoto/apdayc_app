@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- +4dp o +20dp-->
+    <dimen name="padding_activity_general">20dp</dimen>
+    <dimen name="button_login_height">60dp</dimen>
+    <dimen name="margin_horizontal_activity">20dp</dimen>
+    <dimen name="textView_textSize_login">20sp</dimen>
+    <dimen name="editText_textSize_login">24dp</dimen>
+    <dimen name="padding_horizontal_login">20dp</dimen>
+    <dimen name="nav_header_height">210dp</dimen>
+    <dimen name="padding_appBar_horizontal">8dp</dimen>
+    <dimen name="margin_between_textView">14dp</dimen>
+    <dimen name="padding_cardview_interno">12dp</dimen>
+    <dimen name="icon_size_quickacionItem">36dp</dimen>
+    <dimen name="editText_textSize_general">24sp</dimen>
+    <dimen name="padding_item_row_layout">9dp</dimen>
+    <dimen name="image_size_listitem">48dp</dimen>
+    <dimen name="margin_horizontal_detalle">9dp</dimen>
+    <dimen name="button_settings_width">200dp</dimen>
+    <dimen name="encuesta_photo_size">350dp</dimen>
+    <dimen name="estadistica_chart_size">500dp</dimen>
+    <dimen name="padding_item_row_layout_small">6dp</dimen>
+
+    <dimen name="table_column_size_small">100dp</dimen>
+    <dimen name="table_column_size_medium">120dp</dimen>
+    <dimen name="table_column_size_large">140dp</dimen>
+    <dimen name="table_column_size_extra_large">180dp</dimen>
+</resources>

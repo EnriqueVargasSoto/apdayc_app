@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:background="?android:selectableItemBackground"
+    android:padding="@dimen/padding_cardview_interno"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_between_textView"
+        android:gravity="center">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_icon"
+            android:layout_width="@dimen/image_size_listitem"
+            android:layout_height="@dimen/image_size_listitem"
+            android:cropToPadding="false"
+            app:paddingEnd="10dp"
+            app:civ_fill_color="@color/blue_grey_500"
+            android:src="@drawable/ic_person_white_48dp"
+            android:transitionName="@string/transition_cliente"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_nomcliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:text="Nombre de Cliente"
+            android:layout_toLeftOf="@+id/tv_orden"
+            android:layout_toStartOf="@+id/tv_orden" />
+
+        <TextView
+            android:id="@+id/tv_rucdni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_nomcliente"
+            android:text="DNI o RUC"/>
+        <TextView
+            android:id="@+id/tv_codigoCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_nomcliente"
+            android:layout_toRightOf="@+id/tv_rucdni"
+            android:layout_marginLeft="@dimen/margin_between_textView"
+            android:text="Codigo: 0000"/>
+        <TextView
+            android:id="@+id/tv_direccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_rucdni"
+            android:text="Dirección"/>
+
+        <TextView
+            android:id="@+id/tv_orden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Orden"
+            android:layout_marginRight="3dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:id="@+id/img_location"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_below="@+id/tv_orden"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="0dp"
+            android:visibility="visible"
+            app:srcCompat="@drawable/icon_location_off"/>
+
+
+        <ImageView
+            android:id="@+id/img_whatsapp"
+            android:layout_width="21dp"
+            android:layout_height="14dp"
+            android:layout_below="@+id/img_location"
+            android:layout_marginTop="2dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="-3dp"
+            android:visibility="visible"
+            app:srcCompat="@drawable/ic_whatsapp_off"/>
+    </RelativeLayout>
+
+</LinearLayout>

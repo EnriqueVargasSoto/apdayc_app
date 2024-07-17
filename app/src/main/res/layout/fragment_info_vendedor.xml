@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_activity_general">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+            <TextView
+                android:id="@+id/tv_vendedor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Codigo - Vendedor"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/margin_between_textView"
+                android:gravity="center"/>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:background="@color/background_accent_transparente"
+                    android:text="Acumulado del Vendedor"/>
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:background="@color/background_accent_transparente">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="Actual"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="M-1"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="AA"/>
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5dp" android:textStyle="bold" android:text="Cuota Soles S/." />
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/tv_cuotaSolesA"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:text="0.0"/>
+                    <TextView
+                        android:id="@+id/tv_cuotaSolesM"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:text="0.0"/>
+                    <TextView
+                        android:id="@+id/tv_cuotaSolesAA"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:text="0.0"/>
+                </LinearLayout>
+            </TableRow>
+
+<!--            <TableRow-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center">-->
+<!--                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5dp" android:textStyle="bold" android:text="Cuota Paquetes"/>-->
+<!--                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_cuotaPaquetesA"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight=".3"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="0"/>-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_cuotaPaquetesM"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight=".3"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="0"/>-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_cuotaPaquetesAA"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight=".3"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="0"/>-->
+<!--                </LinearLayout>-->
+<!--            </TableRow>-->
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5dp" android:textStyle="bold" android:text="Venta Soles S/."/>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/tv_ventaSolesA"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:text="0.0"/>
+                    <TextView
+                        android:id="@+id/tv_ventaSolesM"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:text="0.0"/>
+                    <TextView
+                        android:id="@+id/tv_ventaSolesAA"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:text="0.0"/>
+                </LinearLayout>
+            </TableRow>
+
+<!--            <TableRow-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center">-->
+<!--                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5dp" android:textStyle="bold" android:text="Venta Paquetes"/>-->
+<!--                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_ventaPaquetesA"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight=".3"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="0"/>-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_ventaPaquetesM"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight=".3"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="0"/>-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_ventaPaquetesAA"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight=".3"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="0"/>-->
+<!--                </LinearLayout>-->
+<!--            </TableRow>-->
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5dp" android:textStyle="bold" android:text="Avance %"/>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/tv_avance"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:text="0.0"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"/>
+                </LinearLayout>
+            </TableRow>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/light_bg_dark_hint_text"/>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5dp" android:textStyle="bold" android:text="Necesidad del \ndía Soles S/."/>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/tv_necesidadSoles"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:text="0.0"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"/>
+                </LinearLayout>
+            </TableRow>
+
+<!--            <TableRow-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center">-->
+<!--                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5dp" android:textStyle="bold" android:text="Necesidad del \ndía Paquetes"/>-->
+<!--                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_necesidadPaquetes"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight=".3"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="0.0"/>-->
+<!--                    <TextView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight=".3"/>-->
+<!--                    <TextView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight=".3"/>-->
+<!--                </LinearLayout>-->
+<!--            </TableRow>-->
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5dp" android:textStyle="bold" android:text="Preventa del \ndía Soles S/."/>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/tv_ventaDiaSoles"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:text="0.0"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"/>
+                </LinearLayout>
+            </TableRow>
+
+<!--            <TableRow-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center">-->
+<!--                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5dp" android:textStyle="bold" android:text="Preventa del \ndía Paquetes"/>-->
+<!--                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_ventaDiaPaquetes"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight=".3"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="0.0"/>-->
+<!--                    <TextView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight=".3"/>-->
+<!--                    <TextView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight=".3"/>-->
+<!--                </LinearLayout>-->
+<!--            </TableRow>-->
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/light_bg_dark_hint_text"/>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:background="@color/background_accent_transparente"
+                    android:text="Indicadores Acumulado"/>
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:background="@color/background_accent_transparente">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="Actual"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="M-1"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="AA"/>
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5dp" android:textStyle="bold" android:text="Cob. Simple"/>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/tv_coberturaSimpleA"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:text="0.0"/>
+                    <TextView
+                        android:id="@+id/tv_coberturaSimpleM"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:text="0.0"/>
+                    <TextView
+                        android:id="@+id/tv_coberturaSimpleAA"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:text="0.0"/>
+                </LinearLayout>
+            </TableRow>
+
+<!--            <TableRow-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center">-->
+<!--                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5dp" android:textStyle="bold" android:text="Cob. múltiple"/>-->
+<!--                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_coberturaMultipleA"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight=".3"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="0.0"/>-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_coberturaMultipleM"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight=".3"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="0.0"/>-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_coberturaMultipleAA"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight=".3"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="0.0"/>-->
+<!--                </LinearLayout>-->
+<!--            </TableRow>-->
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5dp" android:textStyle="bold" android:text="Hit Rate"/>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/tv_hitRateA"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:text="0.0"/>
+                    <TextView
+                        android:id="@+id/tv_hitRateM"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:text="0.0"/>
+                    <TextView
+                        android:id="@+id/tv_hitRateAA"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:text="0.0"/>
+                </LinearLayout>
+            </TableRow>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/light_bg_dark_hint_text"/>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:background="@color/background_accent_transparente">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textStyle="bold"
+                        android:text="Programado"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="Vendido"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="%"/>
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5dp" android:textStyle="bold" android:text="Retener"/>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/tv_reternerP"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:text="0"/>
+                    <TextView
+                        android:id="@+id/tv_reternerV"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:text="0"/>
+                    <TextView
+                        android:id="@+id/tv_reternerPor"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:text="0"/>
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5dp" android:textStyle="bold" android:text="Capturar"/>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/tv_capturarP"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:text="0"/>
+                    <TextView
+                        android:id="@+id/tv_capturarV"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:text="0"/>
+                    <TextView
+                        android:id="@+id/tv_capturarPor"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:text="0"/>
+                </LinearLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5dp" android:textStyle="bold" android:text="Desarrollar"/>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/tv_desarrollarP"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:text="0"/>
+                    <TextView
+                        android:id="@+id/tv_desarrollarV"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:text="0"/>
+                    <TextView
+                        android:id="@+id/tv_desarrollarPor"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:text="0"/>
+                </LinearLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5dp" android:textStyle="bold" android:text="Transaccional"/>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/tv_transaccionalP"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:text="0"/>
+                    <TextView
+                        android:id="@+id/tv_transaccionalV"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:text="0"/>
+                    <TextView
+                        android:id="@+id/tv_transaccionalPor"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:text="0"/>
+                </LinearLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5dp" android:textStyle="bold" android:text="Otros"/>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/tv_otrosP"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:text="0"/>
+                    <TextView
+                        android:id="@+id/tv_otrosV"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:text="0"/>
+                    <TextView
+                        android:id="@+id/tv_otrosPor"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:text="0"/>
+                </LinearLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5dp" android:textStyle="bold" android:text="Total Clientes"/>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/tv_totalClientesP"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:text="0"/>
+                    <TextView
+                        android:id="@+id/tv_totalClientesV"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:text="0"/>
+                    <TextView
+                        android:id="@+id/tv_totalClientesPor"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:gravity="center"
+                        android:text="0"/>
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5dp"/>
+            </TableRow>
+
+<!--            <TableRow-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center">-->
+<!--                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5dp" android:textStyle="bold" android:text="Nro Exhibidores"/>-->
+<!--                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_nroExhibidores"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight=".3"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="0"/>-->
+<!--                    <TextView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight=".3"-->
+<!--                        android:gravity="center"/>-->
+<!--                    <TextView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight=".3"-->
+<!--                        android:gravity="center"/>-->
+<!--                </LinearLayout>-->
+<!--            </TableRow>-->
+
+<!--            <TableRow-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center">-->
+<!--                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5dp" android:textStyle="bold" android:text="Nro Equipos\nde frío"/>-->
+<!--                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_nroPuertasFrio"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight=".3"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="0"/>-->
+<!--                    <TextView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight=".3"-->
+<!--                        android:gravity="center"/>-->
+<!--                    <TextView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight=".3"-->
+<!--                        android:gravity="center"/>-->
+<!--                </LinearLayout>-->
+<!--            </TableRow>-->
+
+
+
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_horizontal_activity"
+            android:gravity="center"
+            android:text="TOP 5 Marcas vendidas en el día"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_gravity="center"/>
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/piechart"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/estadistica_chart_size_medium"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

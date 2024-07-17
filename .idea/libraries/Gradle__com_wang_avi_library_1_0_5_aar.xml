@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.wang.avi:library:1.0.5@aar" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c17d02e632c41d89596956c4426c4d02/transformed/jetified-library-1.0.5/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c17d02e632c41d89596956c4426c4d02/transformed/jetified-library-1.0.5/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/c17d02e632c41d89596956c4426c4d02/transformed/jetified-library-1.0.5/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/Library/Java/JavaVirtualMachines/azul-11.0.19/Contents/Home/caches/modules-2/files-2.1/com.wang.avi/library/1.0.5/3154daec976e59b599e0a0b3e4effd6a6d3e8be6/library-1.0.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Library/Java/JavaVirtualMachines/azul-11.0.19/Contents/Home/caches/modules-2/files-2.1/com.wang.avi/library/1.0.5/12fd661063389c40ecb4e4da06ad565fe675eb00/library-1.0.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- app:actionLayout hace que el item ya no sea tomado como un item convencional y no se ejecute el
+    onOptionsItemSelected al seleccionarlo, es por eso que se debe crear su propio metodo onClickListener
+    en donde se le de valor -->
+    <item android:id="@+id/menu_mapa_ruta"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_action_direcciones"
+        android:title="Cargar rutas" />
+</menu>

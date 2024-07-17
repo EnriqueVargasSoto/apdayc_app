@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="com.expediodigital.ventas360.view.fragment.EstadisticaResumenClienteFragment">
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="@dimen/padding_activity_general"
+            android:orientation="vertical">
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <!-- Table header -->
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/table_row_bg_teal" android:padding="1dp">
+                    <TextView android:layout_width="@dimen/table_column_size_large" android:layout_height="match_parent" android:text="Segmento" android:gravity="center" android:padding="@dimen/padding_item_row_layout" android:textColor="@color/white" android:background="@drawable/table_header_cell_bg_teal"/>
+                    <TextView android:layout_width="@dimen/table_column_size_medium" android:layout_height="match_parent" android:text="Programados" android:gravity="center" android:padding="@dimen/padding_item_row_layout" android:textColor="@color/white" android:background="@drawable/table_header_cell_bg_teal"/>
+                    <TextView android:layout_width="@dimen/table_column_size_small" android:layout_height="match_parent" android:text="Efectivos" android:gravity="center" android:padding="@dimen/padding_item_row_layout" android:textColor="@color/white" android:background="@drawable/table_header_cell_bg_teal"/>
+<!--                    <TextView android:layout_width="@dimen/table_column_size_small" android:layout_height="match_parent" android:text="Paquetes" android:gravity="center" android:padding="@dimen/padding_item_row_layout" android:textColor="@color/white" android:background="@drawable/table_header_cell_bg_teal"/>-->
+                    <TextView android:layout_width="@dimen/table_column_size_medium" android:layout_height="match_parent" android:text="Soles" android:textColor="@color/white" android:gravity="center" android:padding="@dimen/padding_item_row_layout" android:background="@drawable/table_header_cell_bg_teal"/>
+<!--                    <TextView android:layout_width="@dimen/table_column_size_small" android:layout_height="match_parent" android:text="Drop Paquetes" android:textColor="@color/white" android:gravity="center" android:padding="@dimen/padding_item_row_layout" android:background="@drawable/table_header_cell_bg_teal" />-->
+                    <TextView android:layout_width="@dimen/table_column_size_medium" android:layout_height="match_parent" android:text="Drop Soles" android:textColor="@color/white" android:gravity="center" android:padding="@dimen/padding_item_row_layout" android:background="@color/teal_600"/>
+                </TableRow>
+                <!-- Table content -->
+
+                <!-- Table footer -->
+                <!--<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawatable_row_last_bg_tealt_bg" android:padding="1dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="match_parent" android:text="Total" android:gravity="center" android:padding="@dimen/padding_item_row_layout" android:background="@drawable/table_cell_bg"/>
+
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight=".5" android:text="0" android:padding="@dimen/padding_item_row_layout" android:gravity="center" android:background="@drawable/table_cell_bg"/>
+                        <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight=".5" android:text="0" android:padding="@dimen/padding_item_row_layout" android:gravity="center" android:background="@drawable/table_cell_bg"/>
+                    </LinearLayout>
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="match_parent" android:text="0" android:gravity="center" android:padding="@dimen/padding_item_row_layout" android:background="@drawable/table_cell_bg"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="match_parent" android:text="0" android:gravity="center" android:padding="@dimen/padding_item_row_layout" android:background="@drawable/table_cell_bg"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="match_parent" android:text="0" android:gravity="center" android:padding="@dimen/padding_item_row_layout" />
+                </TableRow>-->
+            </TableLayout>
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TableLayout
+                    android:id="@+id/table_segmentos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white">
+                </TableLayout>
+            </ScrollView>
+            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/table_row_bg_teal" android:padding="1dp">
+                <TextView android:layout_width="@dimen/table_column_size_large" android:layout_height="match_parent" android:text="Total" android:gravity="center" android:padding="@dimen/padding_item_row_layout" android:textColor="@color/white" android:background="@drawable/table_header_cell_bg_teal"/>
+                <TextView android:id="@+id/tv_totalProgramados" android:layout_width="@dimen/table_column_size_medium" android:layout_height="match_parent" android:text="0" android:gravity="center" android:padding="@dimen/padding_item_row_layout" android:textColor="@color/white" android:background="@drawable/table_header_cell_bg_teal"/>
+                <TextView android:id="@+id/tv_totalEfectivos" android:layout_width="@dimen/table_column_size_small" android:layout_height="match_parent" android:text="0" android:gravity="center" android:padding="@dimen/padding_item_row_layout" android:textColor="@color/white" android:background="@drawable/table_header_cell_bg_teal"/>
+<!--                <TextView android:id="@+id/tv_totalPaquetes" android:layout_width="@dimen/table_column_size_small" android:layout_height="match_parent" android:text="0" android:gravity="center" android:padding="@dimen/padding_item_row_layout" android:textColor="@color/white" android:background="@drawable/table_header_cell_bg_teal"/>-->
+                <TextView android:id="@+id/tv_totalSoles" android:layout_width="@dimen/table_column_size_medium" android:layout_height="match_parent" android:text="S/. 0.00" android:textColor="@color/white" android:gravity="center_vertical|right" android:padding="@dimen/padding_item_row_layout" android:background="@drawable/table_header_cell_bg_teal"/>
+<!--                <TextView android:id="@+id/tv_totalDropPaquetes" android:layout_width="@dimen/table_column_size_small" android:layout_height="match_parent" android:text="0" android:textColor="@color/white" android:gravity="center" android:padding="@dimen/padding_item_row_layout" android:background="@drawable/table_header_cell_bg_teal"/>-->
+                <TextView android:id="@+id/tv_totalDropSoles" android:layout_width="@dimen/table_column_size_medium" android:layout_height="match_parent" android:text="S/. 0.00" android:textColor="@color/white" android:gravity="center_vertical|right" android:padding="@dimen/padding_item_row_layout" android:background="@color/teal_600"/>
+            </TableRow>
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+</LinearLayout>

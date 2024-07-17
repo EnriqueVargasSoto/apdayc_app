@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tab_clientes_lista"
+        android:enabled="true"
+        android:title="@string/bottom_nav_clientes_lista"
+        android:icon="@drawable/ic_action_lista"/>
+    <item
+        android:id="@+id/tab_clientes_mapa"
+        android:enabled="true"
+        android:title="@string/bottom_nav_clientes_mapa"
+        android:icon="@drawable/ic_action_map" />
+</menu>

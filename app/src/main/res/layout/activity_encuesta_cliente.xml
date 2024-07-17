@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/actionbar_toolbar"/>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_activity_general">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_cliente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Cliente"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                <TextView
+                    android:id="@+id/tv_descripcionEncuesta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:text="Descipcion de la encuesta"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearEncuesta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:focusableInTouchMode="true"
+                android:padding="@dimen/padding_activity_general">
+                <!--android:focusableInTouchMode="true" sirve indirectamente para quitar el focus por defecto que traen los EditText-->
+                <ImageView
+                    android:id="@+id/img_foto"
+                    android:layout_width="@dimen/encuesta_photo_size"
+                    android:layout_height="@dimen/encuesta_photo_size"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_photo_camera_grey"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_horizontal_activity"
+                    android:gravity="center">
+                    <Button
+                        android:id="@+id/btn_tomarFoto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/RaisedButtonAccent"
+                        android:text="Tomar foro"/>
+                    <Button
+                        android:id="@+id/btn_elegirGalería"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/RaisedButtonWhite"
+                        android:text="Elegir de galería"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:text="** Luego de tomar las fotos, estas deben enviarse desde la opción de encuestas pendientes **"/>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

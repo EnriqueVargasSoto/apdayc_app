@@ -1,0 +1,177 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_horizontal_login"
+    tools:context="com.expediodigital.ventas360.view.fragment.PedidoCabeceraFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_numeroPedido"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:hint="@string/hint_numero_pedido"
+                    android:textSize="@dimen/editText_textSize_general" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextViewAsInputEditText"
+                android:text="@string/hint_direccion_entrega"
+                android:layout_marginTop="@dimen/margin_horizontal_activity"/>
+            <Spinner
+                android:id="@+id/spn_direcciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/editText_textSize_general"/>-->
+
+            <!-- Edittext oculto para que se seleccione al cambiar de tabs, y no se abra el datePicker al seleccionar la fecha automaticamente -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_horizontal_activity">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_direccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/editText_textSize_general"
+                    android:editable="false"
+                    android:hint="@string/hint_direccion_entrega"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+                <requestFocus/>
+            </EditText>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_horizontal_activity">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_fechaEntrega"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:textSize="@dimen/editText_textSize_general"
+                        android:hint="@string/hint_fecha_entrega"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+            <!--
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_vertical_formulario">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/edt_horaEntregaDesde"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:textSize="@dimen/editText_textSize_general"
+                        android:hint="@string/hint_hora_entrega_desde"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/edt_horaEntregaHasta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:textSize="@dimen/editText_textSize_general"
+                        android:hint="@string/hint_hora_entrega_hasta"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+            -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextViewAsInputEditText"
+                android:text="@string/hint_forma_pago"
+                android:layout_marginTop="@dimen/margin_horizontal_activity"/>
+            <Spinner
+                android:id="@+id/spn_formaPago"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/editText_textSize_general"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_input_limiteCredito"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_horizontal_activity">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_limiteCredito"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:textSize="@dimen/editText_textSize_general"
+                    android:hint="@string/hint_limiteCredito"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_horizontal_activity">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/editText_textSize_general"
+                    android:inputType="textMultiLine"
+                    android:hint="@string/hint_observacion"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

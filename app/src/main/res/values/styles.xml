@@ -1,0 +1,244 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="alertDialogTheme">@style/AlertDialogApp</item>
+        <!-- TextInputLayout text color-->
+        <item name="colorControlActivated">@color/colorAccentDark</item>
+    </style>
+
+    <style name="AlertDialogApp" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- TextInputLayout text color-->
+        <item name="colorControlActivated">@color/colorAccentDark</item>
+    </style>
+
+    <style name="AppDialogThemeActivity" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <!-- TextInputLayout text color-->
+        <item name="buttonBarNegativeButtonStyle">@style/PositiveButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="MaterialAnimations" parent="@style/Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+
+    <style name="EditTextApp" parent="Widget.AppCompat.EditText">
+        <item name="colorAccent">@color/colorAccentDark</item>
+    </style>
+
+
+    <style name="AppThemeTransparente" parent="AppTheme">
+
+    </style>
+
+
+    <style name="AppThemeDark" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="RaisedButtonWhiteTransparente" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/white_80</item>
+        <item name="colorControlHighlight">@color/grey_400</item>
+        <item name="android:textColor">@drawable/selector_raised_button_textcolor</item>
+    </style>
+
+    <style name="RaisedButtonWhite" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/white</item>
+        <item name="colorControlHighlight">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@drawable/selector_raised_button_textcolor</item>
+    </style>
+
+    <style name="RaisedButtonDark" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/colorPrimaryDark</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="RaisedButtonAccent" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/lime_400</item>
+        <item name="android:textColor">@color/light_bg_dark_primary_text</item>
+        <item name="android:minWidth">88dp</item>
+    </style>
+
+    <style name="FlatButtonAccent" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/background_accent_transparente</item>
+        <item name="android:buttonStyle">@style/Widget.AppCompat.Button.Borderless</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="FlatButtonNormal" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="android:buttonStyle">@style/Widget.AppCompat.Button.Borderless</item>
+    </style>
+
+    <style name="EditTextWhite" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">@android:color/white</item>
+        <item name="android:textSize">@dimen/editText_textSize_login</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="colorAccent">@android:color/white</item>
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="colorControlActivated">@android:color/white</item>
+    </style>
+
+    <style name="EditTextBlack" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">@android:color/black</item>
+        <item name="android:textSize">@dimen/editText_textSize_login</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="colorAccent">@android:color/black</item>
+        <item name="colorControlNormal">@android:color/black</item>
+        <item name="colorControlActivated">@android:color/black</item>
+    </style>
+
+    <style name="ToolBarEditTextWhiteTheme" parent="Theme.AppCompat.Light">
+        <item name="android:textSize">@dimen/abc_text_size_subtitle_material_toolbar</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorHint">@color/light_bg_dark_hint_text</item>
+        <item name="colorControlActivated">@color/colorPrimary</item><!-- Linea inferior -->
+        <item name="android:textCursorDrawable">@drawable/cursor_white</item><!-- cursor -->
+    </style>
+
+    <style name="ToolBarEditTextWhiteStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:paddingLeft">@dimen/padding_editText_toolbar</item>
+        <item name="android:paddingRight">@dimen/padding_editText_toolbar</item>
+        <item name="android:theme">@style/ToolBarEditTextWhiteTheme</item>
+        <!--<item name="android:background">@null</item>
+        Elimina la linea inferior (colorControlActivated) puede ser la opcion mas rapida pero si es
+        un AutocompleteTextView los resultados van a tapar el texto escrito ya que no hay un background
+        para que los resultados se coloquen debajo-->
+    </style>
+
+    <style name="ToolBarTextViewWhiteStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:textSize">@dimen/textView_textSize_title</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="TextViewAsInputEditText" parent="Theme.AppCompat.Light">
+        <item name="android:textSize">@dimen/editText_textSize_general_textinput_selected</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:textColor">@color/grey_500</item>
+    </style>
+
+    <style name="TextViewAsSubTitle" parent="Theme.AppCompat.Light">
+        <item name="android:textSize">@dimen/textView_textSize_subtitle</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+    </style>
+
+    <style name="TextViewAsSubTitle2" parent="Theme.AppCompat.Light">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+    </style>
+
+    <style name="TextViewAsText" parent="Theme.AppCompat.Light">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/light_bg_dark_secondary_text</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+    </style>
+
+    <style name="CheckBoxStyle" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:layout_marginLeft">12dp</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="SwitchGreen" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">@color/green_A700</item>
+
+        <!-- inactive thumb color
+        <item name="colorSwitchThumbNormal">@color/pink</item>
+
+        inactive track color (30% transparency)
+        <item name="android:colorForeground">@color/grey</item>
+        -->
+    </style>
+
+    <style name="Animations" />
+
+    <!-- PopDownMenu -->
+    <style name="Animations.PopDownMenu" />
+
+    <style name="Animations.PopDownMenu.Left">
+        <item name="android:windowEnterAnimation">@anim/grow_from_topleft_to_bottomright</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_bottomright_to_topleft</item>
+    </style>
+
+    <style name="Animations.PopDownMenu.Right">
+        <item name="android:windowEnterAnimation">@anim/grow_from_topright_to_bottomleft</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_bottomleft_to_topright</item>
+    </style>
+
+    <style name="Animations.PopDownMenu.Center">
+        <item name="android:windowEnterAnimation">@anim/grow_from_top</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_bottom</item>
+    </style>
+
+    <!-- PopUpMenu -->
+    <style name="Animations.PopUpMenu" />
+
+    <style name="Animations.PopUpMenu.Left">
+        <item name="android:windowEnterAnimation">@anim/grow_from_bottomleft_to_topright</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_topright_to_bottomleft</item>
+    </style>
+
+    <style name="Animations.PopUpMenu.Right">
+        <item name="android:windowEnterAnimation">@anim/grow_from_bottomright_to_topleft</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_topleft_to_bottomright</item>
+    </style>
+
+    <style name="Animations.PopUpMenu.Center">
+        <item name="android:windowEnterAnimation">@anim/grow_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_top</item>
+    </style>
+
+    <style name="QuickTheme">
+        <item name="android:elevation" tools:targetApi="lollipop">6dp</item>
+    </style>
+
+    <dimen name="padding_editText_toolbar">15dp</dimen>
+    <dimen name="textView_textSize_title">20sp</dimen>
+    <dimen name="editText_textSize_general_textinput_selected">13sp</dimen>
+    <dimen name="textView_textSize_subtitle">18sp</dimen>
+</resources>

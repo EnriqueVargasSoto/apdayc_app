@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rGroup_tipoBusqueda"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/padding_appBar_horizontal"
+    android:gravity="center"
+    android:theme="@style/AppThemeDark">
+
+    <RadioButton
+        android:id="@+id/rbtn_busquedaPorRazonSocial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/margin_between_textView"
+        android:layout_marginRight="@dimen/margin_between_textView"
+        android:checked="true"
+        android:text="Razón Social"/>
+
+    <RadioButton
+        android:id="@+id/rbtn_busquedaPorCodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_between_textView"
+        android:layout_marginRight="@dimen/margin_between_textView"
+        android:text="Código"/>
+
+</RadioGroup>

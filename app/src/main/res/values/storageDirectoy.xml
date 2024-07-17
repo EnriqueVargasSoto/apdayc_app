@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Ventas360App_backups" translatable="false">
+        Ventas360App/Backups
+    </string>
+    <string name="Ventas360App_Picture" translatable="false">
+        Ventas360App/Ventas360App Picture
+    </string>
+    <string name="Ventas360App_PDF" translatable="false">
+        Ventas360App/Ventas360App PDF
+    </string>
+</resources>

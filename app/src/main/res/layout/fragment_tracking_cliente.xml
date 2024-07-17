@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_activity_general">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/cardview_app_radius"
+                app:cardElevation="@dimen/cardview_app_elevation">
+
+                <TableLayout                    
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_cardview_interno"
+                    android:shrinkColumns="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hit Rate"
+                        android:gravity="center"
+                        android:textColor="@color/grey_700"
+                        android:textStyle="bold"/>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tipo Cobertura:"
+
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_tipoCobertura"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_horizontal_detalle">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Programado:"
+                            
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_programado"
+                            
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_horizontal_detalle">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Transcurrido:"
+                            
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_transcurrido"
+                            
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_horizontal_detalle">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Liquidado:"
+                            
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_liquidado"
+                            
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_horizontal_detalle">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hit rate:"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_hitRate"
+                            
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/margin_horizontal_detalle" android:background="@color/light_bg_dark_hint_text"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cuota"
+                        android:gravity="center"
+                        android:textColor="@color/grey_700"
+                        android:textStyle="bold"/>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_horizontal_detalle">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Venta año anterior:"
+                            
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_venAnoAnterior"
+                            
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_horizontal_detalle">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Venta mes anterior:   "
+                            
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_venMesAnterior"
+                            
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_horizontal_detalle">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Avance mes actual:"
+                            
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_avanceMesActual"
+                            
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_horizontal_detalle">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Proyectado:"
+                            
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_proyectado"
+                            
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_horizontal_detalle">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Avance anual:"
+                            
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_avanceAnual"
+                            
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_horizontal_detalle">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Avance mes:"
+                            
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_avanceMes"
+                            
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/margin_horizontal_detalle" android:background="@color/light_bg_dark_hint_text"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CM%"
+                        android:gravity="center"
+                        android:textColor="@color/grey_700"
+                        android:textStyle="bold"/>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_horizontal_detalle">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cobertura múltiple:"
+
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_coberturaMultiple"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_horizontal_detalle">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cuota GTM:"
+
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_cuotaGTM"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_horizontal_detalle">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Segmento:"
+
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_segmento"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_horizontal_detalle">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Número de Exhibidores:"
+
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_numeroExhibidores"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_horizontal_detalle">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Número de puertas frío:   "
+
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_numeroPuertasFrios"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+
+                </TableLayout>
+            </androidx.cardview.widget.CardView>
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/piechart_marcas"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/margin_horizontal_activity"
+                android:layout_marginTop="@dimen/margin_horizontal_activity"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

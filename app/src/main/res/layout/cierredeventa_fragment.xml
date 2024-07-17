@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_activity_general">
+
+        <ImageView
+            android:layout_marginTop="@dimen/margin_horizontal_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/icon_cierre_de_ventas"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_item_row_layout">
+            <TableRow
+                android:layout_marginTop="@dimen/margin_horizontal_activity"
+                android:id="@+id/row_guia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:text="Numero de guía:" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold"/>
+                <TextView android:id="@+id/tv_numeroGuia" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No diponible" android:textColor="@color/colorPrimary"/>
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="@dimen/margin_horizontal_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/label_tipoVendedor" android:text="Transportista:" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold"/>
+                <TextView android:id="@+id/tv_nombreVendedor" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="No disponible"/>
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="@dimen/margin_horizontal_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:text="Fecha de Apertura:   " android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold"/>
+                <TextView android:id="@+id/tv_fechaAp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No disponible"/>
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="@dimen/margin_horizontal_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+                <TextView android:text="Productos disponibles:     " android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold"/>
+                <TextView android:id="@+id/tv_pDisponble" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Indefinido"/>
+            </TableRow>
+        </TableLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_activity_general">
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Clientes Programados:"/>
+                    <TextView android:id="@+id/tv_clientesProgramados" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+                </TableRow>
+                <TableRow
+                    android:layout_marginTop="@dimen/margin_horizontal_detalle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Clientes Visitados:"/>
+                    <TextView android:id="@+id/tv_clientesVisitados" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+                </TableRow>
+<!--                <TableRow-->
+<!--                    android:layout_marginTop="@dimen/margin_horizontal_detalle"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="9dp"-->
+<!--                        android:text="Cantidad unidad mayor (PQT|CAJ):   " />-->
+<!--                    <TextView android:id="@+id/tv_cantidadUnidadMayor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>-->
+<!--                </TableRow>-->
+<!--                <TableRow-->
+<!--                    android:layout_marginTop="@dimen/margin_horizontal_detalle"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+<!--                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cantidad unidad menor (UND):"/>-->
+<!--                    <TextView android:id="@+id/tv_cantidadUnidadMenor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>-->
+<!--                </TableRow>-->
+                <TableRow
+                    android:layout_marginTop="@dimen/margin_horizontal_detalle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Monto total vendido:"/>
+                    <TextView android:id="@+id/tv_importeTotalVentas" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="S/. 0.00"/>
+                </TableRow>
+            </TableLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:layout_marginTop="@dimen/margin_horizontal_activity"
+            android:id="@+id/btn_cerraVentas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cerrar Guia"
+            android:theme="@style/RaisedButtonAccent"
+            android:enabled="false"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_mensaje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_horizontal_detalle"
+            android:text=""
+            android:layout_gravity="center"
+            android:textColor="@color/red_400"/>
+    </LinearLayout>
+</ScrollView>
+

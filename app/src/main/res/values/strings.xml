@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">XalesMap Mobile</string>
+    <string name="version_name">Versión 1.7.1</string>
+    <!-- Nombres para los modulos -->
+    <string name="menu_clientes">Clientes</string>
+    <string name="menu_productos">Productos</string>
+    <string name="menu_Pedidos">Pedidos</string>
+    <string name="menu_estadisticas">Estadisticas</string>
+    <string name="menu_mapa">Mapa</string>
+    <string name="menu_cierre_ventas">Cierre de ventas</string>
+    <string name="menu_configuracion">Configuracion</string>
+    <string name="menu_salir">Salir</string>
+
+    <string name="hint_password">Contraseña</string>
+    <string name="settings">Configuración</string>
+    <string name="username">Usuario</string>
+    <string name="ruc">Ruc</string>
+    <string name="poweredby">powered by</string>
+    <string name="company">Xertica</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="google_maps_api">AIzaSyDceTfXARKDOjOFhElA7Hj1H2ZzGfdxMcQ</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_numero_pedido">Numero de Gestion</string><!--    <string name="hint_numero_pedido">Numero de Pedido</string>-->
+    <string name="hint_direccion_entrega">Dirección</string><!-- <string name="hint_direccion_entrega">Dirección de entrega</string> -->
+    <string name="hint_fecha_entrega">Fecha de gestion</string><!-- <string name="hint_fecha_entrega">Fecha de entrega</string> -->
+    <string name="hint_forma_pago">Forma de pago</string>
+    <string name="hint_observacion">Observación</string>
+    <string name="hint_descripcion_producto">Descripción del producto</string>
+    <string name="hint_stock">Stock</string>
+    <string name="hint_stock_en_linea">Stock en línea</string>
+    <string name="hint_precio_unitario">Precio unitario</string>
+    <string name="hint_politica_precio">Política de precio</string>
+    <string name="hint_cantidad">Cantidad</string>
+    <string name="hint_unidad_medida">Unidad de medida</string>
+    <string name="hint_unidad_medida_2">Opciones adicionales</string>
+    <string name="hint_indique_inconveniente">Indique el inconveniente</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="bottom_nav_clientes_lista">Lista</string>
+    <string name="bottom_nav_clientes_mapa">Mapa</string>
+    <string name="hint_limiteCredito">Límite de crédito</string>
+    <string name="bottom_nav_estadistica_cuota">Avance Cuota</string>
+    <string name="bottom_nav_info_vendedor">Info Vendedor</string>
+    <string name="bottom_nav_estadistica_grafico">Gráfico</string>
+    <string name="bottom_nav_estadistica_marca">Resumen marca</string>
+    <string name="bottom_nav_estadistica_cliente">Resumen cliente</string>
+    <string name="hint_nombres">Nombres</string>
+    <string name="hint_apellidoPaterno">Apellido Paterno</string>
+    <string name="hint_apellidoMaterno">Apellido Materno</string>
+    <string name="hint_rucDni">RUC | DNI</string>
+    <string name="hint_telefono">Teléfono</string>
+    <string name="hint_direccion">Dirección</string>
+    <string name="hint_distrito">Distrito</string>
+    <string name="hint_subGiro">Sub Giro</string>
+    <string name="hint_ruta">Ruta</string>
+    <string name="hint_modulo">Módulo</string>
+    <string name="transition_cliente">transition_cliente</string>
+    <string name="mercadeo">Mercadeo</string>
+    <string name="channel_carga_id">channel_carga</string>
+    <string name="channel_carga_name">Carga de archivos</string>
+    <string name="iniciando_carga">Iniciando carga</string>
+    <string name="envio_encuesta">Envío de encuesta</string>
+    <string name="completado">completado</string>
+    <string name="envio_completado">Envío completado</string>
+    <string name="error_envio_encuesta">ocurrió un error</string>
+    <string name="envio_imcompleto">Envío incompleto</string>
+    <string name="cancelar_envio">Cancelar envío</string>
+    <string name="informacion_vendedor">Información del vendedor</string>
+    <string name="informacion_cliente">Información del cliente</string>
+</resources>

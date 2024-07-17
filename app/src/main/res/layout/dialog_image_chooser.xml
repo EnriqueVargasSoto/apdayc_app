@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="8dp"
+    android:background="#ffffff"
+    android:elevation="3dp"
+    android:fitsSystemWindows="true"
+    android:minWidth="240dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue_600"
+        android:gravity="left|center_vertical"
+        android:text="Escoger opción"
+        android:paddingLeft="16dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="normal" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#999999" />
+
+    <TextView
+        android:id="@+id/tv_gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:drawablePadding="10dp"
+        android:paddingLeft="16dp"
+        android:gravity="center_vertical|left"
+        android:text="Galeria"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#999999" />
+
+    <TextView
+        android:id="@+id/tv_camera"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:drawablePadding="10dp"
+        android:paddingLeft="16dp"
+        android:gravity="center_vertical|left"
+        android:text="Camara"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:background="?android:selectableItemBackground" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="@dimen/padding_cardview_interno">
+
+        <TextView
+            android:id="@+id/tv_cliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:maxLines="2"
+            android:text="Nombre del cliente"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_toLeftOf="@+id/tv_montoTotal" />
+
+        <TextView
+            android:id="@+id/tv_numeroPedido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_cliente"
+            android:layout_marginRight="@dimen/margin_between_textView"
+            android:text="000000000000" />
+
+        <TextView
+            android:id="@+id/tv_condicionPago"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_cliente"
+            android:layout_toRightOf="@+id/tv_numeroPedido"
+            android:text="Contado" />
+
+        <TextView
+            android:id="@+id/tv_motivoNoVenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_cliente"
+            android:layout_toRightOf="@+id/tv_numeroPedido"
+            android:text="Motivo no Venta"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_montoTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="S/.0.00"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/tv_montoTotal"
+            android:layout_below="@+id/tv_montoTotal"
+            android:text="Enviado"
+            android:textColor="@color/green_500"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/check_entregado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/view_flag"
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@color/green_500"/>
+</LinearLayout>

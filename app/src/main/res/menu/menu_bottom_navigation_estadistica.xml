@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tab_estadisticaCuota"
+        android:enabled="true"
+        android:title="@string/bottom_nav_estadistica_cuota"
+        android:icon="@drawable/ic_action_vendedores"/>
+    <item
+        android:id="@+id/tab_infoVendedor"
+        android:enabled="true"
+        android:title="@string/bottom_nav_info_vendedor"
+        android:icon="@drawable/ic_action_person"/>
+    <item
+        android:id="@+id/tab_estadisticaGrafico"
+        android:enabled="true"
+        android:title="@string/bottom_nav_estadistica_grafico"
+        android:icon="@drawable/ic_action_estadistica"/>
+    <item
+        android:id="@+id/tab_estadisticaResumenVentaMarca"
+        android:enabled="true"
+        android:title="@string/bottom_nav_estadistica_marca"
+        android:icon="@drawable/ic_action_tabla"/>
+    <item
+        android:id="@+id/tab_estadisticaResumenVentaCliente"
+        android:enabled="true"
+        android:title="@string/bottom_nav_estadistica_cliente"
+        android:icon="@drawable/ic_action_clientes" />
+</menu>

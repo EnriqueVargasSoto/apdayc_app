@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.expediodigital.ventas360.view.ConfiguracionActivity">
+
+    <include android:id="@+id/action" layout="@layout/actionbar_toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/action"
+        android:padding="@dimen/padding_activity_general"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Servidor" />
+
+        <Spinner
+            android:id="@+id/spinnerServicios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1"
+        android:orientation="vertical">
+
+        <View android:layout_width="match_parent" android:layout_height="0.5dp" android:background="@color/grey_500"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:padding="@dimen/padding_activity_general">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:text="Validar stock de los productos"/>
+            <Switch
+                android:id="@+id/switch_validarStock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="0.5dp" android:background="@color/grey_500"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:padding="@dimen/padding_activity_general">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Bonificaciones"/>
+            <Switch
+                android:id="@+id/switch_bonificaciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="0.5dp" android:background="@color/grey_500"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:padding="@dimen/padding_activity_general"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ingresar productos sin precio"/>
+            <Switch
+                android:id="@+id/switch_productosSinPrecio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="0.5dp" android:background="@color/grey_500"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_activity_general"
+            android:gravity="center"
+            android:text="@string/version_name"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_backup"
+        android:layout_width="@dimen/button_settings_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_horizontal_activity"
+        android:theme="@style/RaisedButtonWhite"
+        android:text="BackUp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linear2"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabSincronizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_activity_general"
+        android:clickable="true"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_action_sincronizar_black"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="22dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="20dp" />
+
+</RelativeLayout>

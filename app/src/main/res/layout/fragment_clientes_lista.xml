@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.expediodigital.ventas360.view.fragment.ClientesListaFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_clientes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linear"
+        tools:listitem="@layout/item_cliente"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <!-- Esta librería no soporta iconos vectorizados desde xml, es por eso que
+         se agrega los iconos desde la clase en java, si se pretende trabajar con iconos
+         convencionales (png por ejemplo) si se puede agregar desde aqui -->
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/margin_horizontal_activity"
+        app:menu_colorNormal="@color/colorAccent"
+        app:menu_colorPressed="@color/colorAccent"
+        app:menu_colorRipple="@color/transparente"
+        android:layout_alignParentRight="true"
+        app:menu_backgroundColor="@color/transparente"
+        android:layout_above="@+id/linear">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_obtenerClientes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/blue_500"
+            app:fab_colorPressed="@color/blue_500"
+            app:fab_colorRipple="@color/transparente"
+            app:fab_size="mini"
+            app:fab_label="Obtener Clientes" />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_nuevoCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/green_A400"
+            app:fab_colorPressed="@color/green_A400"
+            app:fab_colorRipple="@color/transparente"
+            app:fab_size="mini"
+            app:fab_label="Nuevo Cliente" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundTransparente"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".30"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Cantidad:  "/>
+            <TextView
+                android:id="@+id/tv_cantidadTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="0"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".35"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Visitados:  "/>
+            <TextView
+                android:id="@+id/tv_cantidadVisitados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="0"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".35"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Pendientes:  "/>
+            <TextView
+                android:id="@+id/tv_cantidadPendientes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="0"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
